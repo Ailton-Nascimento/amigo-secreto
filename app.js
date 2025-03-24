@@ -32,12 +32,13 @@ function listaAmigoSecreto() {
 }
 
 function sortearAmigo() {
-    
+
     let random = amigos[Math.floor(Math.random() * amigos.length)];
     if (amigos == "") {
         alert("Por favor digite o nome dos Amigos");
     } else
+        listaAmigos.innerHTML = " " //LIMPA A LISTA E DEIXA APENAS O AMIGO SORTEADO NA TELA!!
 
-    nome = document.getElementById("resultado").innerText =`O seu amigo secreto é: ${random}`;
-    
+    nome = document.getElementById("resultado").innerText = `O seu amigo secreto é: ${random}`;
+
 }
